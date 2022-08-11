@@ -125,23 +125,25 @@ class contenedor {
 
 module.exports = contenedor
 
-const originals = {
-    name: "Adidas Originals",
-    price: 30000,
-    thumbnail: "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/7ed0855435194229a525aad6009a0497_9366/Zapatillas_Superstar_Blanco_EG4958_01_standard.jpgd"
-}
-const jordans = {
-    name: "Air Jordan 4 Retro Kaws",
-    price: 100000,
-    thumbnail: "https://cdn-images.farfetch-contents.com/12/95/91/37/12959137_13486346_1000.jpg"
-}
-const airForce = {
-    name: "Nike Air-Force",
-    price: 25000,
-    thumbnail: "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/7ed0855435194229a525aad6009a0497_9366/Zapatillas_Superstar_Blanco_EG4958_01_standard.jpgd"
-}
+const product1 = {
+	name: "Cuaderno",
+	price: 440.25,
+    thumbnail:'',
+};
 
-const archivo = new contenedor ("archivo.txt");
+const product2 = {
+	name: "Boligrafo bic",
+	price: 95.40,
+    thumbnail:'',
+};
+
+const product3 = {
+	name: "Block de hojas rayadas x 500",
+	price: 1250.30,
+    thumbnail:'',
+};
+
+const archivo = new contenedor ("products.json");
 
 //archivo.deleteAll();
 //archivo.save(airForce);

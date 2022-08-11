@@ -7,7 +7,7 @@ const bodyParser = require('body-parser')
 const jsonParser = bodyParser.json()
 const urlencodedParser = bodyParser.urlencoded({ extended: false })
 
-app.use("/api/productos/", router);
+app.use("/api/products/", router);
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 app.use('/public', express.static(__dirname + '/public'));
@@ -16,7 +16,7 @@ app.use(bodyParser.json())
 const contenedor = require("./Contenedor.js");
 const { json } = require("body-parser");
 
-const container = new contenedor("file.txt")
+const container = new contenedor("./products.json")
 const PORT = 8080 ;
 
 app.get('/form', (req,res)=>{
